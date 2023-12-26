@@ -1,0 +1,167 @@
+
+ <style>
+
+    .nav-link{
+        background-color:#fff !important;  
+        color: #000 !important;
+        font-size: 18px;
+    }
+
+    a.active{
+        background-color:#FF5151 !important;  
+        font-size: 18px;  
+    }
+
+</style>   
+
+
+<?php
+
+$router = service('router');
+$method = $router->methodName();
+?>
+
+
+ <div class="container">
+           <div class="row">
+        <form action="" id="adminsearch" >
+            <div class="col-xl-12">
+                   <?php echo view('admin/_topmessage'); ?>
+                <div class="card">                  
+                    <div class="card-body">                           
+   
+                        <div class="row ">                             
+                            <div class="col-lg-3 ">
+                                <div class="row">
+                                    <label> Start Date </label>
+                                    <div class="col-md-12">
+                                        <input class="form-control" name="start_date" type="date" 
+                                        value="<?php  echo isset($searchArray['start_date']) ? $searchArray['start_date'] : "" ?>" placeholder="Search by start date">
+                                    </div>
+                                </div>       
+                            </div>                              
+
+                            <div class="col-lg-3 ">
+                                <div class="row">
+                                    <label> End Date </label>
+                                    <div class="col-md-12">
+                                        <input class="form-control" name="end_date" type="date" value="<?php echo isset($searchArray['end_date']) ? $searchArray['end_date'] :''; ?>" placeholder="Search by end date">
+                                    </div>
+                                </div>       
+                            </div>
+
+                            <div class="col-lg-3 ">
+                                <div class="row">
+                                    <label> Owner Name </label>
+                                    <div class="col-md-12">
+                                        <select class="form-control" name="owner_id" id="owner_id" >
+
+                                             <option value="">--Select Owner--</option>
+
+                                       <?php
+                                            foreach ($ownerDropdown as $row) { ?>
+                                                <option value="<?php echo $row['owner_id'] ?>"  <?php echo   (isset($searchArray['owner_id']) &&  $searchArray['owner_id'] ==$row['owner_id']) ? "Selected" : ""; ?> ><?php echo $row['name']; ?></option>
+
+                                            <?php } ?>
+
+                                                </option>
+                                        </select>  
+                                    </div>
+                                </div>       
+                            </div>
+
+                              <div class="col-lg-3 ">
+                                <div class="row">
+                                    <label> Tenant Name </label>
+                                    <div class="col-md-12">
+                                        <select class="form-control" name="tenant_id">
+
+                                             <option value="">--Select Tenant--</option>
+                                                  <?php
+                                            foreach ($tenantDropdown as $row) { ?>
+                                                <option value="<?php echo $row['tenant_id'] ?>"  <?php echo   (isset($searchArray['tenant_id']) &&  $searchArray['tenant_id'] ==$row['tenant_id']) ? "Selected" : ""; ?> ><?php echo $row['name']; ?></option>
+
+                                            <?php } ?>
+                                        </select>  
+                                    </div>
+                                </div>       
+                            </div>
+                            
+                           
+                            
+                        </div><!-- first row end here--> <br />
+
+                            
+
+                      <div class="row ">
+   
+
+                           
+                                <div class="col-md-2 text-right">
+                                    <button type="submit" class="btn btn-primary waves-effect waves-light mr-1">
+                                        Submit
+                                    </button>
+                                </div>
+                            
+
+
+                          
+                             
+                                <div class="col-md-2">
+                                    <a href="<?php echo site_url('chatreport'); ?>">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light mr-1">
+                                            Refresh
+                                        </button></a>
+                                </div>
+                          
+
+                        </div>                              
+                    </div> 
+                    
+                   
+                </div>
+            </div>
+        </form> 
+    </div>
+
+            <ul class="nav nav-tabs" role="tablist" >
+                <li class="nav-item" >
+                    <a class="nav-link active" style="background-color:#FF5151;" href="javascript::void(0);">Chat List</a>
+                </li>
+                
+            </ul>
+<!-- <script>
+  $(document).ready(function () {
+
+        $('#owner_id').change(function () {
+
+            var ow = $('#owner_id').val();
+         
+            var action = 'get_tenant';
+            if (ow != '')
+            {
+                $.ajax({
+                    url: "<?php echo site_url('chatReportController/action'); ?>",
+
+                    method: "POST",
+                    data: {owner_id: ow, action: action},
+                    dataType: "JSON",
+                    success: function (data)
+                    {
+                        var html = '<option value="">Select Tenant</option>';
+
+                        for (var count = 0; count < data.length; count++)
+                        {
+                            html += '<option value="' + data[count].tenant_id + '">' + data[count].name + '</option>';
+                        }
+
+                        $('#tenant_id').html(html);
+
+                    }
+                });
+            } 
+        });
+});
+
+</script>
+ -->

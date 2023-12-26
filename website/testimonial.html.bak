@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:31 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="#" />
+<meta name="author" content="#" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Software and mobile Development company in India | Geniesoftsystem</title>
+
+<!-- favicon icon -->
+<link rel="shortcut icon" href="images/favicon-32x32.png" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+<!-- animate -->
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+
+<!-- prettyphoto -->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+<!-- shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
+
+<!-- main -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+</head>
+
+<body>
+
+    <!--page start-->
+    <div class="page">
+
+        <!--header start-->
+       <header id="masthead" class="header ttm-header-style-01">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">sales@geniesoftsystem.com</a></li>
+                           <li><i class="fa fa-phone"></i><a href="mailto:info@example.com.com">+91- 8080 184 153 / 8767 184 153</a></li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <ul class="top-contact">
+                                
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Flickr"><i class="fa fa-flickr"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="index.html" title="Altech" rel="home">
+                                        <img id="logo-img" class="img-center lazyload" data-src="images/logo.png" alt="logo">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <div class="ttm-rt-contact">
+                                        <!-- header-icons -->
+                                       <!-- header-icons end <div class="ttm-header-icons ">
+                                            <span class="ttm-header-icon ttm-header-cart-link">
+                                                <a href="#"><i class="ti ti-shopping-cart"></i>
+                                                    <span class="number-cart">0</span>
+                                                </a>
+                                            </span>
+                                            <div class="ttm-header-icon ttm-header-search-link">
+                                                <a href="#"><i class="ti ti-search"></i></a>
+                                                <div class="ttm-search-overlay">
+                                                    <form method="get" class="ttm-site-searchform" action="#">
+                                                        <div class="w-search-form-h">
+                                                            <div class="w-search-form-row">
+                                                                <div class="w-search-input">
+                                                                    <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+                                                                    <button type="submit">
+                                                                        <i class="ti ti-search"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu">
+                                        <ul class="dropdown">
+                                           
+                                            
+                                            <li><a href="#">Services</a>
+                                                <ul>
+                                                    <li><a href="#">MOBILE APPLICATION DEVELOPMENT</a>
+<ul>
+                                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                                </ul>
+
+                                                    </li>
+                                                    <li><a href="desktop-application-development.html">Desktop Application Development</a>
+                                                    </li>
+
+                                                    <li><a href="#">Web Development</a>
+<ul>
+                                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                                </ul>
+
+
+                                                    </li>
+                                                    <li><a href="#">Plugin Development</a>
+
+<ul>
+                                                    <li><a href="toolbardev.html">TOOLBAR DEVELOPMENT</a></li>
+                                                    <li><a href="changetheme.html">Change theme</a></li>
+                                                   
+                                                </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+<li><a href="#">company</a>
+                                                <ul>
+                                                    <li><a href="aboutus.html">About Us </a></li>
+                                                    <li><a href="mission.html">mission</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="technology.html">Technology</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Portfolio</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Success</a>
+                                                <ul>
+                                                    <li><a href="clientlist.html">Clientlist</a></li>
+                                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact Us</a>
+                                               
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+
+        </header><!--header end-->
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <div class="title-box text-center">
+                            <div class="page-title-heading">
+                                <h1 class="title">TESTIMONIALS</h1>
+                            </div><!-- /.page-title-captions -->
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; : : &nbsp;</span>
+                                <span>TESTIMONIALS</span>
+                            </div>  
+                        </div>
+                    </div><!-- /.col-md-12 -->  
+                </div><!-- /.row -->  
+            </div><!-- /.container -->                      
+        </div><!-- page-title end-->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+        <!-- aboutus-section -->
+             <div class="sidebar ttm-sidebar ttm-bgcolor-white clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+                
+                    <div class="col-lg-12 content-area order-lg-2">
+                        <!-- ttm-service-single-content-are -->
+
+                        
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            <div class="ttm-service-description">
+                                <div class="row">
+                                   
+                                    <div class="col-md-8">
+                                       
+                                        <p>We don’t just claim, we deliver! We provide our clients with the best software products and services – Offshore Software Development, Software Programming, Software Application Development to name a few, thus giving them a competitive edge.
+
+We are a customer-centric software products and services company having a proven track record of delivering the best value of technology since over a decade. We consider our esteemed customers as our valuable assets. Their testimonials and feedbacks motivate us to endeavor towards excellence and provide optimum customer satisfaction. Their words are a clear evidence of our effort and dedication for every project we undertake, reflecting the success of our software solutions globally!
+</p>
+                                       
+                                    </div>
+                                     <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper">
+                                            <img class="img-fluid" src="images/offshore-software-development.png" alt="changetheme">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                        <!-- ttm-service-single-content-are end -->
+
+                        <!-- ttm-service-single-content-are -->
+                       
+                        <!-- ttm-service-single-content-are end -->
+                    </div>
+                    
+                </div><!-- row end -->
+            </div>
+        </div>
+            <!-- process-section end -->
+
+ <section class="ttm-row only-testimonial-section bg-img11 clearfix">
+                <div class="container">
+                    <div class="row"><!-- row -->
+                        <div class="col-lg-12">
+                            <!-- section title -->
+                            <div class="section-title with-desc text-center clearfix">
+                                <div class="title-header">
+                                    <h5>Client Feedbacks</h5>
+                                    <h2 class="title">Check out our work <span>Process</span></h2>
+                                </div>
+                            </div><!-- section title end -->
+                        </div>
+                    </div>
+                    <div class="row"><!-- row -->
+                        <div class="col-md-8 offset-md-2">
+                            <div class="testimonial-slide style1 owl-carousel pt-0" data-item="1" data-nav="false" data-dots="false" data-auto="false">
+                                <!-- testimonials -->
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/01.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>Genie Soft System best quality, for me, has always been their “team-development” approach and their true professionalism. Every aspect of development was always handled with care and consideration, while allowing me to stay in constant communication with the actual developers. Their knowledgeable and professional staff guided me through each phase of program evolution and always kept my objectives in mind.”</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>Kaitlin Weatherly.</h6>
+                                            <label>3041 Ray Court</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- testimonials END -->
+                                <!-- testimonials -->
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/02.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>“I wanted to thank you all for delivering an impressive final result. Not only were you able to clean up the application that the precious company delivered to us, but you were able to do it with unmatched communication and service. How you could work with the myriad of technologies originally used and still turn out a quality product is beyond me. You are the only company that we have come across that is able to understand the use of XML, XSLT, Java Server Pages (JSP), Apache Web Server, Internet Information Server (IIS), HTA, HTML, ASP and SQL Server 2000 the other company had originally implemented in the project. You and your team pounded through our list of issues with thoroughness and were there on call when we needed you, and boy did we need you!”
+Thanks again and we look forward to doing business with you in the near future</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>Shami Ratan Shah</h6>
+                                            <label>Kiran Prakashan Pvt Ltd.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- testimonials END -->
+                                <!-- testimonials -->
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/03.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>“Top professionals! They cracked an extremely difficult project involving complex technology. Even though the project turned out to be much more complex than expected, we have never heard a word of complaint from Genie Soft System team. Instead they strived harder to accomplish the task. Genie Soft System will undoubtedly be our choice number one for any project.”</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>Alice Rocha Gomes</h6>
+                                            <label>Taw Hill Medical Practice</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/03.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>“I just wanted to take a moment to express our gratitude for the services Genie Soft System has recently provided our company. Genie Soft System stepped in, accomplished some amazing work in a short period of time, and bailed us out of a tough situation. Our needs required a development firm adept in all mobile OS application and you delivered remarkably.
+
+Even after the initial programming was complete, you continued to assist us with changes and did so with a willing and professional attitude We feel very comfortable with Genie Soft System handling our ongoing compatible and full technical support and will certainly consider using you for future development work.”
+
+Thanks again for your hard work and we look forward to our continued relationship.</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>IT Manager</h6>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/03.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>“The Genie Soft System team has done an excellent job of creating the first release (Beta) of our product, and I look forwards to working with them all again, on further development of this system, and on other new projects. Thanks guys! ”</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>Rami Zananiri</h6>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonials text-center"> 
+                                    <div class="testimonial-content"><!-- testimonials-content -->
+                                        <div class="testimonial-avatar">
+                                            <div class="testimonial-img"><!-- testimonials-img -->
+                                                <img class="img-center" src="images/testimonial/03.jpg" alt="testimonial-img">
+                                            </div>
+                                        </div>
+                                        <blockquote>“Genie Soft System provided excellent technical assistance on our project. Code quality was first rate, and the ability to understand requirements and translate them into code was exemplary.”</blockquote>
+                                        <div class="ttm-ratting-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-caption"><!-- testimonials-caption -->
+                                            <h6>Antonio</h6>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- testimonials END -->
+                            </div>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </section>
+        </div><!--site-main end-->
+
+        <!--footer start-->
+        <footer class="footer widget-footer clearfix">
+          
+            <div class="second-footer ttm-textcolor-white bg-img2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget widget_text  clearfix">
+                                
+                               
+                                <h3 class="widget-title">About Our Company</h3>
+                                <div class="textwidget widget-text">
+                                   Genie Softsystem is proud to be led by extremely focused and dedicated professionals, who are known for their entrepreneurial skills, experience, and expertise in a wide spectrum of industries Through our solution partnerships and strategic alliances we continue to expand our horizons in the global market. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                               <h3 class="widget-title">Mobile Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Web Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                           <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Our Products</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="http://smartappsindia.com/index.php/dashboard/our_products">Our Products</a></li>
+                                    <li><a href="http://geniemobileapps.com/">Our Mobile Developement</a></li>
+                                  
+                                </ul><br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text ttm-bgcolor-darkgrey ttm-textcolor-white">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-6">
+                            <div class="">
+                                <span>Copyright © 2022&nbsp;Genie Soft System <a href="# target="_blank">#</a></span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+        <!-- Javascript -->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.js"></script>    
+        <script src="js/jquery-waypoints.js"></script>    
+        <script src="js/jquery-validate.js"></script> 
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/numinate.min6959.js?ver=4.9.3"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Javascript end-->
+
+</body>
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:32 GMT -->
+</html>

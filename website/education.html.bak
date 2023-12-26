@@ -1,0 +1,630 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:31 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="#" />
+<meta name="author" content="#" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Software and mobile Development company in India | Geniesoftsystem</title>
+
+<!-- favicon icon -->
+<link rel="shortcut icon" href="images/favicon-32x32.png" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+<!-- animate -->
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+
+<!-- prettyphoto -->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+<!-- shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
+
+<!-- main -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+</head>
+
+<body>
+
+    <!--page start-->
+    <div class="page">
+
+        <!--header start-->
+       <header id="masthead" class="header ttm-header-style-01">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">sales@geniesoftsystem.com</a></li>
+                           <li><i class="fa fa-phone"></i><a href="mailto:info@example.com.com">+91- 8080 184 153 / 8767 184 153</a></li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <ul class="top-contact">
+                                
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Flickr"><i class="fa fa-flickr"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="index.html" title="Altech" rel="home">
+                                        <img id="logo-img" class="img-center lazyload" data-src="images/logo.png" alt="logo">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <div class="ttm-rt-contact">
+                                        <!-- header-icons -->
+                                       <div class="ttm-header-icons ">
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu">
+                                        <ul class="dropdown">
+                                           
+                                            
+                                            <li><a href="#">Services</a>
+                                                <ul>
+                                                    <li><a href="#">MOBILE APPLICATION DEVELOPMENT</a>
+<ul>
+                                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                                </ul>
+
+                                                    </li>
+                                                    <li><a href="desktop-application-development.html">Desktop Application Development</a>
+                                                    </li>
+
+                                                    <li><a href="#">Web Development</a>
+<ul>
+                                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                                </ul>
+
+
+                                                    </li>
+                                                    <li><a href="#">Plugin Development</a>
+
+<ul>
+                                                    <li><a href="toolbardev.html">TOOLBAR DEVELOPMENT</a></li>
+                                                    <li><a href="changetheme.html">Change theme</a></li>
+                                                   
+                                                </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+<li><a href="#">company</a>
+                                                <ul>
+                                                    <li><a href="aboutus.html">About Us </a></li>
+                                                    <li><a href="mission.html">mission</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="technology.html">Technology</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Portfolio</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Success</a>
+                                                <ul>
+                                                    <li><a href="clientlist.html">Clientlist</a></li>
+                                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact Us</a>
+                                               
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+
+        </header><!--header end-->
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <div class="title-box text-center">
+                            <div class="page-title-heading">
+                                <h1 class="title">Education</h1>
+                            </div><!-- /.page-title-captions -->
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; : : &nbsp;</span>
+                                <span>Education</span>
+                            </div>  
+                        </div>
+                    </div><!-- /.col-md-12 -->  
+                </div><!-- /.row -->  
+            </div><!-- /.container -->                      
+        </div><!-- page-title end-->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+        <!-- aboutus-section -->
+             <div class="sidebar ttm-sidebar ttm-bgcolor-white clearfix" style="background-image:url('images/bg.jpg')">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12 content-area order-lg-2">
+                        <!-- ttm-service-single-content-are -->
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            
+                            <div class="ttm-service-description">
+                             
+                               <h3>Webtalent</h3>
+<p>You can make your profile, Companies are registered in app, You can search job as per keyword,skill,designation,location,category,experience,salary, You can get latest job as per domain/profile, You can post resume,upload image,upload video resume.</p>
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/web.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/web1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/web2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								 <div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>DS (Data Structure)</h3>
+<p>You can get program for data structure, You can download program and upload on compiler, It saves in .C or . Cpp file, You can bookmark program, also share with social friends.</p>
+   <p> <span>Google Play store :  <a href="https://play.google.com/store/apps/details?id=com.ds_sandeep&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.ds_sandeep&hl=en</a></span></p>
+    
+                 
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/data.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/data1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/data2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								  
+								<h3>Webtutor</h3>
+<p>It provides MCQ Related to studies, You can get as per subject MCQ With duration, You can take test as per levels, You can take test as practice/Mock test, After completion of test it is automatically saved and get results for same, You can share with facebook,whats up,messaging,can convert to pdf files, You can get solution for your test, Allows you to take e-learning courses that meet the standards SCORM 1.2, SCORM 2004 and AICC, Courses can be downloaded via the Internet, can send the results of passing rates of application, It is stored in database.</p>
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/webtutor.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/webtutor1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/webtutor2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+                              <div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+							  
+							  <h3>M Vidya</h3>
+<p>You can register your profile, You can login by emailid/username,password, You can write,edit,make video of any topic related to studies, You can get question with option like General knowledge or any topic, You can add any topic/course to favourite</p>
+                  <p> <span>Google Play store :  <a href="https://play.google.com/store/apps/details?id=com.webtutor.main&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.webtutor.main&hl=en</a></span></p>
+ 
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/vidya.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/vidya1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/vidya2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>Arc The Way</h3>
+<p>Its simple and easy way to communicate school teacher or admin with parents or student, You can get alert and send homework, You can get major classroom updates, You can get study resources in various formats, You can get feedback from teachers.</p>
+      <p> <span>Google Play store :  <a href="https://play.google.com/store/apps/details?id=com.my.arch&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.my.arch&hl=en/a> </span></p>
+    
+                      
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/arc.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/arc1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/arc2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								  <h3> ORB Project</h3>
+ <p>Its one kind of puzzle app where you get questions related to-
+Conventional/realistic/investigative/enterprising/social/artistic/general knowledge etc,
+There are several screen like orbit/earth on every click you will get new question to answer yourself,
+Its one kind of judging your knowledge.</p>
+
+                                  <div class="row mb-35"">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/orb.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/orb1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/orb2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>Litomania</h3>
+<p>An book reader app where various authors and enterpreneurs are registered. It keeps user updated with latest thoughts, news, phrases etc Having option to read books or articles as per authors. Shows online videos, conferences, seminars of authors.</p>
+                   
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/litomania.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/litomania1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/litomania2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>Service Tax</h3>
+<p> It provides handbook on service tax &amp; Goods on service tax (GST),
+          You can complete your action through facebook/emails/google+ etc,
+          It provides information about two parts like-<br>
+          1. Finance act for the year like time limit/penalty/interest/due dates/steps to determine taxable services.<br>
+          2.Recent notification.</p>             
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/service.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/service1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/service2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								  <h3>PDF Reader</h3>
+<p>It is used to read and write documents, You can edit and similarly share with social sites/relatives/friends etc.</p>
+                
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/pdf.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/pdf1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/pdf2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>Noolagam</h3>
+<p>It is used to read/write out articles, It is available by categories, It provide list of books.</p>
+                   
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/noolgam.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/noolgam1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/noolgam2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+								<div class="separator">
+                                    <div class="sep-line mt-35 mb-35 res-991-mtb-20"></div>
+                                </div>  
+								<h3>Sinclus App</h3>
+<p>SINCLUS is India's leading overseas human resources provider with a growing domestic presence in technical staffing services. Sinclus engages with clients to fulfill their requirements with the right candidates quickly, efficiently and cost-effectively. Our area of focus is providing personnel in the Oil and Gas, Infrastructure, Power, Building Construction and Refinery Industries in the Civil, Mechanical,Electrical, Instrumentation categories.</p>
+<p>
+<strong>Sinclus mobile application having following Salient features:-</strong><br>
+Simple Registration Process<br>
+Latest Job Openings – International and Domestic<br>
+Daily New Updates and Notifications<br>
+Job search by Title, Company and Location<br>
+Apply directly with just one click button<br>
+Share jobs with your friends using Social Apps.</p>
+                          
+                               <p>  <span>Google App Store: <a href="https://play.google.com/store/apps/details?id=com.com.sinclus&hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.com.sinclus&hl=en </a></span></p>
+			                   
+
+                                  <div class="row mb-35">
+                                   <div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/sinclus.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/sinclus1.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+									<div class="col-md-4">
+                                        <div class="ttm_single_image-wrapper res-767-mt-20">
+                                            <img class="img-fluid" src="images/education/sinclus2.png" alt="single-img-nineteen">
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                              
+					          
+                            </div>
+                        </div>
+                        <!-- ttm-service-single-content-are end -->
+                    </div>
+                    
+                </div><!-- row end -->
+            </div>
+        </div>
+            <!-- process-section end -->
+
+        </div><!--site-main end-->
+
+        <!--footer start-->
+        <footer class="footer widget-footer clearfix">
+          
+            <div class="second-footer ttm-textcolor-white bg-img2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget widget_text  clearfix">
+                                
+                               
+                                <h3 class="widget-title">About Our Company</h3>
+                                <div class="textwidget widget-text">
+                                   Genie Softsystem is proud to be led by extremely focused and dedicated professionals, who are known for their entrepreneurial skills, experience, and expertise in a wide spectrum of industries Through our solution partnerships and strategic alliances we continue to expand our horizons in the global market. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                               <h3 class="widget-title">Mobile Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Web Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                           <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Our Products</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="http://smartappsindia.com/index.php/dashboard/our_products">Our Products</a></li>
+                                    <li><a href="http://geniemobileapps.com/">Our Mobile Developement</a></li>
+                                  
+                                </ul><br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text ttm-bgcolor-darkgrey ttm-textcolor-white">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-6">
+                            <div class="">
+                                <span>Copyright © 2022&nbsp;Genie Soft System <a href="# target="_blank">#</a></span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+        <!-- Javascript -->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.js"></script>    
+        <script src="js/jquery-waypoints.js"></script>    
+        <script src="js/jquery-validate.js"></script> 
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/numinate.min6959.js?ver=4.9.3"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Javascript end-->
+
+</body>
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:32 GMT -->
+</html>

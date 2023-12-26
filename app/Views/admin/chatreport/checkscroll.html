@@ -1,0 +1,81 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<style type="text/css">
+  .form-container {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  overflow: scroll;
+  position: relative;
+}
+</style>
+
+
+<div class='form-container'>
+  <p>This is line 1 of text</p>
+  <p>This is line 2 of text</p>
+</div>
+<div>
+  <input type='text' placeholder="Type a message.">
+  <button type='button'>Use animation</button>
+  <button type='button'>Don't use animation</button>
+</div>
+
+
+
+
+<script type="text/javascript">
+  const sendMessage = (selector, isAnimate = true) => {
+  const text = $(selector).val();
+  const $container = $('.form-container');
+  $container.append(`<p>${text}</p>`);
+  if (isAnimate) {
+    $container.animate({
+      scrollTop: $container.prop('scrollHeight')
+    }, 1000);
+  } else {
+    $container.scrollTop($container.prop('scrollHeight'));
+  }
+  $(selector).val('');
+};
+
+
+$('button:eq(1)').on('click', function() {
+  sendMessage('input[type=text]', false);
+});
+</script>
+
+
+
+
+
+<script type="text/javascript">
+const messages = document.getElementById('messages');
+
+function appendMessage() {
+  const message = document.getElementsByClassName('message')[0];
+  const newMessage = message.cloneNode(true);
+  messages.appendChild(newMessage);
+}
+
+function getMessages() {
+  // Prior to getting your messages.
+  shouldScroll = messages.scrollTop + messages.clientHeight === messages.scrollHeight;
+  /*
+   * Get your messages, we'll just simulate it by appending a new one syncronously.
+   */
+  appendMessage();
+  // After getting your messages.
+  if (!shouldScroll) {
+    scrollToBottom();
+  }
+}
+
+function scrollToBottom() {
+  messages.scrollTop = messages.scrollHeight;
+}
+
+scrollToBottom();
+
+setInterval(getMessages, 10);
+</script>

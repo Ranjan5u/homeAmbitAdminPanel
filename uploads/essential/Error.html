@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost/ci4_admin/index.php/admin_dash -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex">
+
+    <title>Error</title>
+    <style type="text/css">
+        :root { --main-bg-color: #fff; --main-text-color: #555; --dark-text-color: #222; --light-text-color: #c7c7c7; --brand-primary-color: #E06E3F; --light-bg-color: #ededee; --dark-bg-color: #404040; } body { height: 100%; background: var(--main-bg-color); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--main-text-color); font-weight: 300; margin: 0; padding: 0; } h1 { font-weight: lighter; letter-spacing: 0.8; font-size: 3rem; color: var(--dark-text-color); margin: 0; } h1.headline { margin-top: 20%; font-size: 5rem; } .text-center { text-align: center; } p.lead { font-size: 1.6rem; } .container { max-width: 75rem; margin: 0 auto; padding: 1rem; } .header { background: var(--light-bg-color); color: var(--dark-text-color); } .header .container { padding: 1rem 1.75rem 1.75rem 1.75rem; } .header h1 { font-size: 2.5rem; font-weight: 500; } .header p { font-size: 1.2rem; margin: 0; line-height: 2.5; } .header a { color: var(--brand-primary-color); margin-left: 2rem; display: none; text-decoration: none; } .header:hover a { display: inline; } .footer { background: var(--dark-bg-color); color: var(--light-text-color); } .footer .container { border-top: 1px solid #e7e7e7; margin-top: 1rem; text-align: center; } .source { background: #343434; color: var(--light-text-color); padding: 0.5em 1em; border-radius: 5px; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 0.85rem; margin: 0; overflow-x: scroll; } .source span.line { line-height: 1.4; } .source span.line .number { color: #666; } .source .line .highlight { display: block; background: var(--dark-text-color); color: var(--light-text-color); } .source span.highlight .number { color: #fff; } .tabs { list-style: none; list-style-position: inside; margin: 0; padding: 0; margin-bottom: -1px; } .tabs li { display: inline; } .tabs a:link, .tabs a:visited { padding: 0rem 1rem; line-height: 2.7; text-decoration: none; color: var(--dark-text-color); background: var(--light-bg-color); border: 1px solid rgba(0,0,0,0.15); border-bottom: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; display: inline-block; } .tabs a:hover { background: var(--light-bg-color); border-color: rgba(0,0,0,0.15); } .tabs a.active { background: var(--main-bg-color); color: var(--main-text-color); } .tab-content { background: var(--main-bg-color); border: 1px solid rgba(0,0,0,0.15); } .content { padding: 1rem; } .hide { display: none; } .alert { margin-top: 2rem; display: block; text-align: center; line-height: 3.0; background: #d9edf7; border: 1px solid #bcdff1; border-radius: 5px; color: #31708f; } ul, ol { line-height: 1.8; } table { width: 100%; overflow: hidden; } th { text-align: left; border-bottom: 1px solid #e7e7e7; padding-bottom: 0.5rem; } td { padding: 0.2rem 0.5rem 0.2rem 0; } tr:hover td { background: #f1f1f1; } td pre { white-space: pre-wrap; } .trace a { color: inherit; } .trace table { width: auto; } .trace tr td:first-child { min-width: 5em; font-weight: bold; } .trace td { background: var(--light-bg-color); padding: 0 1rem; } .trace td pre { margin: 0; } .args { display: none; }     </style>
+
+    <script type="text/javascript">
+        var tabLinks    = new Array();
+var contentDivs = new Array();
+
+function init()
+{
+    // Grab the tab links and content divs from the page
+    var tabListItems = document.getElementById('tabs').childNodes;
+    console.log(tabListItems);
+    for (var i = 0; i < tabListItems.length; i ++)
+    {
+        if (tabListItems[i].nodeName == "LI")
+        {
+            var tabLink     = getFirstChildWithTagName(tabListItems[i], 'A');
+            var id          = getHash(tabLink.getAttribute('href'));
+            tabLinks[id]    = tabLink;
+            contentDivs[id] = document.getElementById(id);
+        }
+    }
+
+    // Assign onclick events to the tab links, and
+    // highlight the first tab
+    var i = 0;
+
+    for (var id in tabLinks)
+    {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function () {
+            this.blur()
+        };
+        if (i == 0)
+        {
+            tabLinks[id].className = 'active';
+        }
+        i ++;
+    }
+
+    // Hide all content divs except the first
+    var i = 0;
+
+    for (var id in contentDivs)
+    {
+        if (i != 0)
+        {
+            console.log(contentDivs[id]);
+            contentDivs[id].className = 'content hide';
+        }
+        i ++;
+    }
+}
+
+function showTab()
+{
+    var selectedId = getHash(this.getAttribute('href'));
+
+    // Highlight the selected tab, and dim all others.
+    // Also show the selected content div, and hide all others.
+    for (var id in contentDivs)
+    {
+        if (id == selectedId)
+        {
+            tabLinks[id].className    = 'active';
+            contentDivs[id].className = 'content';
+        }
+        else
+        {
+            tabLinks[id].className    = '';
+            contentDivs[id].className = 'content hide';
+        }
+    }
+
+    // Stop the browser following the link
+    return false;
+}
+
+function getFirstChildWithTagName(element, tagName)
+{
+    for (var i = 0; i < element.childNodes.length; i ++)
+    {
+        if (element.childNodes[i].nodeName == tagName)
+        {
+            return element.childNodes[i];
+        }
+    }
+}
+
+function getHash(url)
+{
+    var hashPos = url.lastIndexOf('#');
+    return url.substring(hashPos + 1);
+}
+
+function toggle(elem)
+{
+    elem = document.getElementById(elem);
+
+    if (elem.style && elem.style['display'])
+    {
+        // Only works with the "style" attr
+        var disp = elem.style['display'];
+    }
+    else if (elem.currentStyle)
+    {
+        // For MSIE, naturally
+        var disp = elem.currentStyle['display'];
+    }
+    else if (window.getComputedStyle)
+    {
+        // For most other browsers
+        var disp = document.defaultView.getComputedStyle(elem, null).getPropertyValue('display');
+    }
+
+    // Toggle the state of the "display" style
+    elem.style.display = disp == 'block' ? 'none' : 'block';
+
+    return false;
+}
+    </script>
+</head>
+<body onload="init()">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <h1>Error</h1>
+            <p>
+                Call to a member function get() on null                <a href="https://www.duckduckgo.com/?q=Error+Call+to+a+member+function+get%28%29+on+null" rel="noreferrer" target="_blank">search →</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Source -->
+    <div class="container">
+        <p><b>APPPATH/Config/Routes.php</b> at line <b>40</b></p>
+
+                    <div class="source">
+                <pre><code><span class="line"><span class="number">33</span> &nbsp;*&nbsp;--------------------------------------------------------------------
+<span class="line"><span class="number">34</span> &nbsp;*/
+<span class="line"><span class="number">35</span> 
+<span class="line"><span class="number">36</span> //&nbsp;We&nbsp;get&nbsp;a&nbsp;performance&nbsp;increase&nbsp;by&nbsp;specifying&nbsp;the&nbsp;default
+<span class="line"><span class="number">37</span> //&nbsp;route&nbsp;since&nbsp;we&nbsp;don't&nbsp;have&nbsp;to&nbsp;scan&nbsp;directories.
+<span class="line"><span class="number">38</span> </span><span style="color: #c7c7c7">$routes</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">get</span><span style="color: #f1ce61;">(</span><span style="color: #869d6a">'/'</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #869d6a">'Home::index'</span><span style="color: #f1ce61;">);
+<span class="line"><span class="number">39</span> 
+<span class="line highlight"><span class="number">40</span> $route-&gt;get('admin_dash','Home::admin_dash');
+</span></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #869d6a"></span><span style="color: #f1ce61;"></span><span style="color: #869d6a"></span><span style="color: #f1ce61;"><span class="line"><span class="number">41</span> 
+<span class="line"><span class="number">42</span> </span><span style="color: #767a7e; font-style: italic">/*
+<span class="line"><span class="number">43</span> &nbsp;*&nbsp;--------------------------------------------------------------------
+<span class="line"><span class="number">44</span> &nbsp;*&nbsp;Additional&nbsp;Routing
+<span class="line"><span class="number">45</span> &nbsp;*&nbsp;--------------------------------------------------------------------
+<span class="line"><span class="number">46</span> &nbsp;*
+<span class="line"><span class="number">47</span> &nbsp;*&nbsp;There&nbsp;will&nbsp;often&nbsp;be&nbsp;times&nbsp;that&nbsp;you&nbsp;need&nbsp;additional&nbsp;routing&nbsp;and&nbsp;you
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre>            </div>
+            </div>
+
+    <div class="container">
+
+        <ul class="tabs" id="tabs">
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#backtrace" class="active">Backtrace</a></li>
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#server">Server</a></li>
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#request">Request</a></li>
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#response">Response</a></li>
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#files">Files</a></li>
+            <li><a href="http://localhost/ci4_admin/index.php/admin_dash#memory">Memory</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <!-- Backtrace -->
+            <div class="content" id="backtrace">
+
+                <ol class="trace">
+                
+                    <li>
+                        <p>
+                            <!-- Trace info -->
+                                                            require SYSTEMPATH/CodeIgniter.php                            
+                            <!-- Class/Method -->
+                            
+                                                            &nbsp;&nbsp;—&nbsp;&nbsp;    require()
+                                                    </p>
+
+                        <!-- Source? -->
+                                            </li>
+
+                
+                    <li>
+                        <p>
+                            <!-- Trace info -->
+                                                            SYSTEMPATH/CodeIgniter.php : 415                            
+                            <!-- Class/Method -->
+                                                            &nbsp;&nbsp;—&nbsp;&nbsp;CodeIgniter\CodeIgniter-&gt;tryToRouteIt                                                                    ()
+                                                            
+                                                    </p>
+
+                        <!-- Source? -->
+                                                    <div class="source">
+                                <pre><code><span class="line"><span class="number">408</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@throws&nbsp;PageNotFoundException
+<span class="line"><span class="number">409</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@throws&nbsp;RedirectException
+<span class="line"><span class="number">410</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+<span class="line"><span class="number">411</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;mixed|RequestInterface|ResponseInterface
+<span class="line"><span class="number">412</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class="line"><span class="number">413</span> &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f1ce61;">protected&nbsp;function&nbsp;</span><span style="color: #c7c7c7">handleRequest</span><span style="color: #f1ce61;">(?</span><span style="color: #c7c7c7">RouteCollectionInterface&nbsp;$routes</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #c7c7c7">Cache&nbsp;$cacheConfig</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #c7c7c7">bool&nbsp;$returnResponse&nbsp;</span><span style="color: #f1ce61;">=&nbsp;</span><span style="color: #c7c7c7">false</span><span style="color: #f1ce61;">)
+<span class="line"><span class="number">414</span> &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="line highlight"><span class="number">415</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$routeFilter&nbsp;=&nbsp;$this-&gt;tryToRouteIt($routes);
+</span></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"><span class="line"><span class="number">416</span> 
+<span class="line"><span class="number">417</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #c7c7c7">$uri&nbsp;</span><span style="color: #f1ce61;">=&nbsp;</span><span style="color: #c7c7c7">$this</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">determinePath</span><span style="color: #f1ce61;">();
+<span class="line"><span class="number">418</span> 
+<span class="line"><span class="number">419</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #767a7e; font-style: italic">//&nbsp;Start&nbsp;up&nbsp;the&nbsp;filters
+<span class="line"><span class="number">420</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #c7c7c7">$filters&nbsp;</span><span style="color: #f1ce61;">=&nbsp;</span><span style="color: #c7c7c7">Services</span><span style="color: #f1ce61;">::</span><span style="color: #c7c7c7">filters</span><span style="color: #f1ce61;">();
+<span class="line"><span class="number">421</span> 
+<span class="line"><span class="number">422</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #767a7e; font-style: italic">//&nbsp;If&nbsp;any&nbsp;filters&nbsp;were&nbsp;specified&nbsp;within&nbsp;the&nbsp;routes&nbsp;file,
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre>                            </div>
+                                            </li>
+
+                
+                    <li>
+                        <p>
+                            <!-- Trace info -->
+                                                            SYSTEMPATH/CodeIgniter.php : 349                            
+                            <!-- Class/Method -->
+                                                            &nbsp;&nbsp;—&nbsp;&nbsp;CodeIgniter\CodeIgniter-&gt;handleRequest                                                                    ()
+                                                            
+                                                    </p>
+
+                        <!-- Source? -->
+                                                    <div class="source">
+                                <pre><code><span class="line"><span class="number">342</span> 
+<span class="line"><span class="number">343</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #767a7e; font-style: italic">//&nbsp;spark&nbsp;command&nbsp;has&nbsp;nothing&nbsp;to&nbsp;do&nbsp;with&nbsp;HTTP&nbsp;redirect&nbsp;and&nbsp;404
+<span class="line"><span class="number">344</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #f1ce61;">if&nbsp;(</span><span style="color: #c7c7c7">$this</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">isSparked</span><span style="color: #f1ce61;">())&nbsp;{
+<span class="line"><span class="number">345</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #c7c7c7">$this</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">handleRequest</span><span style="color: #f1ce61;">(</span><span style="color: #c7c7c7">$routes</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #c7c7c7">$cacheConfig</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #c7c7c7">$returnResponse</span><span style="color: #f1ce61;">);
+<span class="line"><span class="number">346</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class="line"><span class="number">347</span> 
+<span class="line"><span class="number">348</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{
+<span class="line highlight"><span class="number">349</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$this-&gt;handleRequest($routes,&nbsp;$cacheConfig,&nbsp;$returnResponse);
+</span></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"><span class="line"><span class="number">350</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #c7c7c7">RedirectException&nbsp;$e</span><span style="color: #f1ce61;">)&nbsp;{
+<span class="line"><span class="number">351</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #c7c7c7">$logger&nbsp;</span><span style="color: #f1ce61;">=&nbsp;</span><span style="color: #c7c7c7">Services</span><span style="color: #f1ce61;">::</span><span style="color: #c7c7c7">logger</span><span style="color: #f1ce61;">();
+<span class="line"><span class="number">352</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #c7c7c7">$logger</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">info</span><span style="color: #f1ce61;">(</span><span style="color: #869d6a">'REDIRECTED&nbsp;ROUTE&nbsp;at&nbsp;'&nbsp;</span><span style="color: #f1ce61;">.&nbsp;</span><span style="color: #c7c7c7">$e</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">getMessage</span><span style="color: #f1ce61;">());
+<span class="line"><span class="number">353</span> 
+<span class="line"><span class="number">354</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #767a7e; font-style: italic">//&nbsp;If&nbsp;the&nbsp;route&nbsp;is&nbsp;a&nbsp;'redirect'&nbsp;route,&nbsp;it&nbsp;throws
+<span class="line"><span class="number">355</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;the&nbsp;exception&nbsp;with&nbsp;the&nbsp;$to&nbsp;as&nbsp;the&nbsp;message
+<span class="line"><span class="number">356</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #c7c7c7">$this</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">response</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">redirect</span><span style="color: #f1ce61;">(</span><span style="color: #c7c7c7">base_url</span><span style="color: #f1ce61;">(</span><span style="color: #c7c7c7">$e</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">getMessage</span><span style="color: #f1ce61;">()),&nbsp;</span><span style="color: #869d6a">'auto'</span><span style="color: #f1ce61;">,&nbsp;</span><span style="color: #c7c7c7">$e</span><span style="color: #f1ce61;">-&gt;</span><span style="color: #c7c7c7">getCode</span><span style="color: #f1ce61;">());
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre>                            </div>
+                                            </li>
+
+                
+                    <li>
+                        <p>
+                            <!-- Trace info -->
+                                                            FCPATH/index.php : 55                            
+                            <!-- Class/Method -->
+                                                            &nbsp;&nbsp;—&nbsp;&nbsp;CodeIgniter\CodeIgniter-&gt;run                                                                    ()
+                                                            
+                                                    </p>
+
+                        <!-- Source? -->
+                                                    <div class="source">
+                                <pre><code><span class="line"><span class="number">48</span> &nbsp;*---------------------------------------------------------------
+<span class="line"><span class="number">49</span> &nbsp;*&nbsp;LAUNCH&nbsp;THE&nbsp;APPLICATION
+<span class="line"><span class="number">50</span> &nbsp;*---------------------------------------------------------------
+<span class="line"><span class="number">51</span> &nbsp;*&nbsp;Now&nbsp;that&nbsp;everything&nbsp;is&nbsp;setup,&nbsp;it's&nbsp;time&nbsp;to&nbsp;actually&nbsp;fire
+<span class="line"><span class="number">52</span> &nbsp;*&nbsp;up&nbsp;the&nbsp;engines&nbsp;and&nbsp;make&nbsp;this&nbsp;app&nbsp;do&nbsp;its&nbsp;thang.
+<span class="line"><span class="number">53</span> &nbsp;*/
+<span class="line"><span class="number">54</span> 
+<span class="line highlight"><span class="number">55</span> $app-&gt;run();
+</span></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"></span><span style="color: #c7c7c7"></span><span style="color: #f1ce61;"><span class="line"><span class="number">56</span> </span>
+</span></span></span></span></span></span></span></code></pre>                            </div>
+                                            </li>
+
+                                </ol>
+
+            </div>
+
+            <!-- Server -->
+            <div class="content hide" id="server">
+                                    
+                    <h3>$_SERVER</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>HTTP_HOST</td>
+                                <td>
+                                                                            localhost                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_CONNECTION</td>
+                                <td>
+                                                                            keep-alive                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_CH_UA</td>
+                                <td>
+                                                                            " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_CH_UA_MOBILE</td>
+                                <td>
+                                                                            ?0                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_CH_UA_PLATFORM</td>
+                                <td>
+                                                                            "Linux"                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_UPGRADE_INSECURE_REQUESTS</td>
+                                <td>
+                                                                            1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_USER_AGENT</td>
+                                <td>
+                                                                            Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_ACCEPT</td>
+                                <td>
+                                                                            text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_FETCH_SITE</td>
+                                <td>
+                                                                            none                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_FETCH_MODE</td>
+                                <td>
+                                                                            navigate                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_FETCH_USER</td>
+                                <td>
+                                                                            ?1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_SEC_FETCH_DEST</td>
+                                <td>
+                                                                            document                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_ACCEPT_ENCODING</td>
+                                <td>
+                                                                            gzip, deflate, br                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_ACCEPT_LANGUAGE</td>
+                                <td>
+                                                                            en-GB,en-US;q=0.9,en;q=0.8                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HTTP_COOKIE</td>
+                                <td>
+                                                                            _tccl_visitor=25d7b63a-2351-4a66-8abe-01bca78f5c01; debug-bar-state=minimized                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>PATH</td>
+                                <td>
+                                                                            /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_SIGNATURE</td>
+                                <td>
+                                                                            &lt;address&gt;Apache/2.4.29 (Ubuntu) Server at localhost Port 80&lt;/address&gt;
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_SOFTWARE</td>
+                                <td>
+                                                                            Apache/2.4.29 (Ubuntu)                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_NAME</td>
+                                <td>
+                                                                            localhost                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_ADDR</td>
+                                <td>
+                                                                            ::1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_PORT</td>
+                                <td>
+                                                                            80                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REMOTE_ADDR</td>
+                                <td>
+                                                                            ::1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>DOCUMENT_ROOT</td>
+                                <td>
+                                                                            /var/www/html                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REQUEST_SCHEME</td>
+                                <td>
+                                                                            http                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>CONTEXT_PREFIX</td>
+                                <td>
+                                                                                                                                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>CONTEXT_DOCUMENT_ROOT</td>
+                                <td>
+                                                                            /var/www/html                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_ADMIN</td>
+                                <td>
+                                                                            webmaster@localhost                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SCRIPT_FILENAME</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/index.php                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REMOTE_PORT</td>
+                                <td>
+                                                                            38662                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>GATEWAY_INTERFACE</td>
+                                <td>
+                                                                            CGI/1.1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SERVER_PROTOCOL</td>
+                                <td>
+                                                                            HTTP/1.1                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REQUEST_METHOD</td>
+                                <td>
+                                                                            GET                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>QUERY_STRING</td>
+                                <td>
+                                                                                                                                                </td>
+                            </tr>
+                                                    <tr>
+                                <td>REQUEST_URI</td>
+                                <td>
+                                                                            /ci4_admin/index.php/admin_dash                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SCRIPT_NAME</td>
+                                <td>
+                                                                            /ci4_admin/index.php                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>PATH_INFO</td>
+                                <td>
+                                                                            /admin_dash                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>PATH_TRANSLATED</td>
+                                <td>
+                                                                            /var/www/html/admin_dash                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>PHP_SELF</td>
+                                <td>
+                                                                            /ci4_admin/index.php/admin_dash                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REQUEST_TIME_FLOAT</td>
+                                <td>
+                                                                            <pre>1658832282.919</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>REQUEST_TIME</td>
+                                <td>
+                                                                            <pre>1658832282</pre>
+                                                                    </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+
+                                    
+                <!-- Constants -->
+                                                    <h3>Constants</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>FCPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>APPPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/app/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>ROOTPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SYSTEMPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/system/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>WRITEPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/writable/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>TESTPATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/tests/                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>APP_NAMESPACE</td>
+                                <td>
+                                                                            App                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>COMPOSER_PATH</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/vendor/autoload.php                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>SECOND</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>MINUTE</td>
+                                <td>
+                                                                            <pre>60</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>HOUR</td>
+                                <td>
+                                                                            <pre>3600</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>DAY</td>
+                                <td>
+                                                                            <pre>86400</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>WEEK</td>
+                                <td>
+                                                                            <pre>604800</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>MONTH</td>
+                                <td>
+                                                                            <pre>2592000</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>YEAR</td>
+                                <td>
+                                                                            <pre>31536000</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>DECADE</td>
+                                <td>
+                                                                            <pre>315360000</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_SUCCESS</td>
+                                <td>
+                                                                            <pre>0</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_ERROR</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_CONFIG</td>
+                                <td>
+                                                                            <pre>3</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_UNKNOWN_FILE</td>
+                                <td>
+                                                                            <pre>4</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_UNKNOWN_CLASS</td>
+                                <td>
+                                                                            <pre>5</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_UNKNOWN_METHOD</td>
+                                <td>
+                                                                            <pre>6</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_USER_INPUT</td>
+                                <td>
+                                                                            <pre>7</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT_DATABASE</td>
+                                <td>
+                                                                            <pre>8</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT__AUTO_MIN</td>
+                                <td>
+                                                                            <pre>9</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EXIT__AUTO_MAX</td>
+                                <td>
+                                                                            <pre>125</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EVENT_PRIORITY_LOW</td>
+                                <td>
+                                                                            <pre>200</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EVENT_PRIORITY_NORMAL</td>
+                                <td>
+                                                                            <pre>100</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>EVENT_PRIORITY_HIGH</td>
+                                <td>
+                                                                            <pre>10</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>ENVIRONMENT</td>
+                                <td>
+                                                                            production                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>CI_DEBUG</td>
+                                <td>
+                                                                            <pre></pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_DIR</td>
+                                <td>
+                                                                            /var/www/html/ci4_admin/system/ThirdParty/Kint                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_WIN</td>
+                                <td>
+                                                                            <pre></pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP70</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP71</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP72</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP73</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP74</td>
+                                <td>
+                                                                            <pre>1</pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP80</td>
+                                <td>
+                                                                            <pre></pre>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>KINT_PHP81</td>
+                                <td>
+                                                                            <pre></pre>
+                                                                    </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                            </div>
+
+            <!-- Request -->
+            <div class="content hide" id="request">
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="width: 10em">Path</td>
+                            <td>http://localhost/ci4_admin/admin_dash</td>
+                        </tr>
+                        <tr>
+                            <td>HTTP Method</td>
+                            <td>GET</td>
+                        </tr>
+                        <tr>
+                            <td>IP Address</td>
+                            <td>::1</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10em">Is AJAX Request?</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>Is CLI Request?</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>Is Secure Request?</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>User Agent</td>
+                            <td>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                                                                                            
+                    
+                    <h3>$_COOKIE</h3>
+
+                    <table style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>_tccl_visitor</td>
+                                <td>
+                                                                            25d7b63a-2351-4a66-8abe-01bca78f5c01                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <td>debug-bar-state</td>
+                                <td>
+                                                                            minimized                                                                    </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+
+                
+                
+                                
+                    <h3>Headers</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Header</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                                                                                <tr>
+                                    <td>Host</td>
+                                    <td>localhost</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Connection</td>
+                                    <td>keep-alive</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Ch-Ua</td>
+                                    <td>" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Ch-Ua-Mobile</td>
+                                    <td>?0</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Ch-Ua-Platform</td>
+                                    <td>"Linux"</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Upgrade-Insecure-Requests</td>
+                                    <td>1</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>User-Agent</td>
+                                    <td>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Accept</td>
+                                    <td>text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Fetch-Site</td>
+                                    <td>none</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Fetch-Mode</td>
+                                    <td>navigate</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Fetch-User</td>
+                                    <td>?1</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Sec-Fetch-Dest</td>
+                                    <td>document</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Accept-Encoding</td>
+                                    <td>gzip, deflate, br</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Accept-Language</td>
+                                    <td>en-GB,en-US;q=0.9,en;q=0.8</td>
+                                </tr>
+                                                                                                                                            <tr>
+                                    <td>Cookie</td>
+                                    <td>_tccl_visitor=25d7b63a-2351-4a66-8abe-01bca78f5c01; debug-bar-state=minimized</td>
+                                </tr>
+                                                                            </tbody>
+                    </table>
+
+                            </div>
+
+            <!-- Response -->
+                        <div class="content hide" id="response">
+                <table>
+                    <tbody><tr>
+                        <td style="width: 15em">Response Status</td>
+                        <td>500 - Internal Server Error</td>
+                    </tr>
+                </tbody></table>
+
+                                                    
+                    <h3>Headers</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Header</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>Cache-control</td>
+                                <td>no-store, max-age=0, no-cache</td>
+                            </tr>
+                                                    <tr>
+                                <td>Content-Type</td>
+                                <td>text/html; charset=UTF-8</td>
+                            </tr>
+                                                </tbody>
+                    </table>
+
+                            </div>
+
+            <!-- Files -->
+            <div class="content hide" id="files">
+                
+                <ol>
+                                    <li>FCPATH/index.php</li>
+                                    <li>APPPATH/Config/Paths.php</li>
+                                    <li>SYSTEMPATH/bootstrap.php</li>
+                                    <li>APPPATH/Config/Constants.php</li>
+                                    <li>APPPATH/Common.php</li>
+                                    <li>SYSTEMPATH/Common.php</li>
+                                    <li>SYSTEMPATH/Config/AutoloadConfig.php</li>
+                                    <li>APPPATH/Config/Autoload.php</li>
+                                    <li>SYSTEMPATH/Modules/Modules.php</li>
+                                    <li>APPPATH/Config/Modules.php</li>
+                                    <li>SYSTEMPATH/Autoloader/Autoloader.php</li>
+                                    <li>SYSTEMPATH/Config/BaseService.php</li>
+                                    <li>SYSTEMPATH/Config/Services.php</li>
+                                    <li>APPPATH/Config/Services.php</li>
+                                    <li>SYSTEMPATH/Autoloader/FileLocator.php</li>
+                                    <li>SYSTEMPATH/Helpers/url_helper.php</li>
+                                    <li>SYSTEMPATH/Config/DotEnv.php</li>
+                                    <li>SYSTEMPATH/Config/Factories.php</li>
+                                    <li>SYSTEMPATH/Config/Factory.php</li>
+                                    <li>SYSTEMPATH/Config/BaseConfig.php</li>
+                                    <li>APPPATH/Config/App.php</li>
+                                    <li>SYSTEMPATH/CodeIgniter.php</li>
+                                    <li>APPPATH/Config/Boot/production.php</li>
+                                    <li>APPPATH/Config/Exceptions.php</li>
+                                    <li>SYSTEMPATH/HTTP/IncomingRequest.php</li>
+                                    <li>SYSTEMPATH/HTTP/Request.php</li>
+                                    <li>SYSTEMPATH/HTTP/Message.php</li>
+                                    <li>SYSTEMPATH/HTTP/MessageInterface.php</li>
+                                    <li>SYSTEMPATH/HTTP/MessageTrait.php</li>
+                                    <li>SYSTEMPATH/HTTP/RequestInterface.php</li>
+                                    <li>SYSTEMPATH/HTTP/RequestTrait.php</li>
+                                    <li>SYSTEMPATH/HTTP/URI.php</li>
+                                    <li>SYSTEMPATH/HTTP/UserAgent.php</li>
+                                    <li>APPPATH/Config/UserAgents.php</li>
+                                    <li>SYSTEMPATH/HTTP/Header.php</li>
+                                    <li>SYSTEMPATH/HTTP/Response.php</li>
+                                    <li>SYSTEMPATH/HTTP/ResponseInterface.php</li>
+                                    <li>SYSTEMPATH/HTTP/ResponseTrait.php</li>
+                                    <li>SYSTEMPATH/Cookie/Cookie.php</li>
+                                    <li>SYSTEMPATH/Cookie/CloneableCookieInterface.php</li>
+                                    <li>SYSTEMPATH/Cookie/CookieInterface.php</li>
+                                    <li>APPPATH/Config/ContentSecurityPolicy.php</li>
+                                    <li>SYSTEMPATH/HTTP/ContentSecurityPolicy.php</li>
+                                    <li>SYSTEMPATH/Cookie/CookieStore.php</li>
+                                    <li>APPPATH/Config/Cookie.php</li>
+                                    <li>SYSTEMPATH/Debug/Exceptions.php</li>
+                                    <li>SYSTEMPATH/API/ResponseTrait.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/init.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Kint.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Utils.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/init_helpers.php</li>
+                                    <li>APPPATH/Config/Kint.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Renderer/Renderer.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Renderer/RichRenderer.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Renderer/CliRenderer.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Kint/Renderer/TextRenderer.php</li>
+                                    <li>SYSTEMPATH/Debug/Timer.php</li>
+                                    <li>SYSTEMPATH/Events/Events.php</li>
+                                    <li>APPPATH/Config/Events.php</li>
+                                    <li>APPPATH/Config/Cache.php</li>
+                                    <li>SYSTEMPATH/Cache/CacheFactory.php</li>
+                                    <li>SYSTEMPATH/Cache/Handlers/FileHandler.php</li>
+                                    <li>SYSTEMPATH/Cache/Handlers/BaseHandler.php</li>
+                                    <li>SYSTEMPATH/Cache/CacheInterface.php</li>
+                                    <li>APPPATH/Config/Routes.php</li>
+                                    <li>SYSTEMPATH/Router/RouteCollection.php</li>
+                                    <li>SYSTEMPATH/Router/RouteCollectionInterface.php</li>
+                                    <li>SYSTEMPATH/Config/Routes.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/Escaper/Escaper.php</li>
+                                    <li>SYSTEMPATH/Log/Logger.php</li>
+                                    <li>SYSTEMPATH/ThirdParty/PSR/Log/LoggerInterface.php</li>
+                                    <li>APPPATH/Config/Logger.php</li>
+                                    <li>SYSTEMPATH/Log/Handlers/FileHandler.php</li>
+                                    <li>SYSTEMPATH/Log/Handlers/BaseHandler.php</li>
+                                    <li>SYSTEMPATH/Log/Handlers/HandlerInterface.php</li>
+                                    <li>APPPATH/Views/errors/html/error_exception.php</li>
+                                    <li>SYSTEMPATH/Validation/FormatRules.php</li>
+                                </ol>
+            </div>
+
+            <!-- Memory -->
+            <div class="content hide" id="memory">
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Memory Usage</td>
+                            <td>4MB</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 12em">Peak Memory Usage:</td>
+                            <td>4MB</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Limit:</td>
+                            <td>128M</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>  <!-- /tab-content -->
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+        <div class="container">
+
+            <p>
+                Displayed at 05:44:42am —
+                PHP: 7.4.28  —
+                CodeIgniter: 4.2.1            </p>
+
+        </div>
+    </div>
+
+
+
+</body></html>

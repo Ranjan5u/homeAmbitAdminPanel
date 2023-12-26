@@ -1,0 +1,462 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:31 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="#" />
+<meta name="author" content="#" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Software and mobile Development company in India | Geniesoftsystem</title>
+
+<!-- favicon icon -->
+<link rel="shortcut icon" href="images/favicon-32x32.png" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+<!-- animate -->
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+
+<!-- prettyphoto -->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+<!-- shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
+
+<!-- main -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+</head>
+
+<body>
+
+    <!--page start-->
+    <div class="page">
+
+        <!--header start-->
+       <header id="masthead" class="header ttm-header-style-01">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com.com">sales@geniesoftsystem.com</a></li>
+                           <li><i class="fa fa-phone"></i><a href="mailto:info@example.com.com">+91- 8080 184 153 / 8767 184 153</a></li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <ul class="top-contact">
+                                
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Flickr"><i class="fa fa-flickr"></i></a>
+                                    </li>
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="index.html" title="Altech" rel="home">
+                                        <img id="logo-img" class="img-center lazyload" data-src="images/logo.png" alt="logo">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <div class="ttm-rt-contact">
+                                        <!-- header-icons -->
+                                       <!-- header-icons end <div class="ttm-header-icons ">
+                                            <span class="ttm-header-icon ttm-header-cart-link">
+                                                <a href="#"><i class="ti ti-shopping-cart"></i>
+                                                    <span class="number-cart">0</span>
+                                                </a>
+                                            </span>
+                                            <div class="ttm-header-icon ttm-header-search-link">
+                                                <a href="#"><i class="ti ti-search"></i></a>
+                                                <div class="ttm-search-overlay">
+                                                    <form method="get" class="ttm-site-searchform" action="#">
+                                                        <div class="w-search-form-h">
+                                                            <div class="w-search-form-row">
+                                                                <div class="w-search-input">
+                                                                    <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+                                                                    <button type="submit">
+                                                                        <i class="ti ti-search"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu">
+                                        <ul class="dropdown">
+                                           
+                                            
+                                            <li><a href="#">Services</a>
+                                                <ul>
+                                                    <li><a href="#">MOBILE APPLICATION DEVELOPMENT</a>
+<ul>
+                                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                                </ul>
+
+                                                    </li>
+                                                    <li><a href="desktop-application-development.html">Desktop Application Development</a>
+                                                    </li>
+
+                                                    <li><a href="#">Web Development</a>
+<ul>
+                                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                                </ul>
+
+
+                                                    </li>
+                                                    <li><a href="#">Plugin Development</a>
+
+<ul>
+                                                    <li><a href="toolbardev.html">TOOLBAR DEVELOPMENT</a></li>
+                                                    <li><a href="changetheme.html">Change theme</a></li>
+                                                   
+                                                </ul>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+<li><a href="#">company</a>
+                                                <ul>
+                                                    <li><a href="aboutus.html">About Us </a></li>
+                                                    <li><a href="mission.html">mission</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="technology.html">Technology</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Portfolio</a>
+                                               
+                                            </li>
+                                            <li><a href="#">Success</a>
+                                                <ul>
+                                                    <li><a href="clientlist.html">Clientlist</a></li>
+                                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact Us</a>
+                                               
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+
+        </header><!--header end-->
+        <!-- page-title -->
+        <div class="ttm-page-title-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <div class="title-box text-center">
+                            <div class="page-title-heading">
+                                <h1 class="title">WINDOWS MOBILE APP DEVELOPMENT</h1>
+                            </div><!-- /.page-title-captions -->
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
+                                </span>
+                                <span class="ttm-bread-sep">&nbsp; : : &nbsp;</span>
+                                <span>WINDOWS MOBILE APP DEVELOPMENT </span>
+                            </div>  
+                        </div>
+                    </div><!-- /.col-md-12 -->  
+                </div><!-- /.row -->  
+            </div><!-- /.container -->                      
+        </div><!-- page-title end-->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+        <!-- aboutus-section -->
+             <div class="sidebar ttm-sidebar ttm-bgcolor-white clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-9 content-area order-lg-2">
+                        <!-- ttm-service-single-content-are -->
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            <div class="ttm_single_image-wrapper mb-35">
+                                <img class="img-fluid" src="images/single-img-twelve.jpg" alt="single-img-twelve">
+                            </div>
+                            <div class="ttm-service-description">
+                               
+                                <p>Custom Windows Mobile Apps development for smartphones and mobile handsets using the Windows Mobile platform for unique business needs of your organization to increase your productivity and improve your competitive advantage.</p>
+<p>
+The Windows is the most widely used platform for mobile application development since it is user friendly as well as provides intuitive user interface.
+
+</p>
+                                
+                              
+ <ul class="ttm-list ttm-list-style-icon">
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">We develop customized Windows mobile applications cost effectively </span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Our team is expert in major Windows mobile platforms, such as Windows mobile 2003, Windows CE, Pocket PC 2003, Windows mobile 6.0, Windows mobile 7.0 and all other latest versions.</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">We provide application development services for all industry verticals including small to medium business, retail, healthcare, entertainment, education, weather, multimedia, utility etc.</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">We enhance your apps with best features providing prime importance to the quality of app.</span></li>
+                                                   
+                                                </ul>
+
+                                <p class="mb-35">Genie Soft System emphasizes on providing cost effective, scalable Mobile application development solutions to clients, making us a Windows app development company, that will never fail to deliver the best that you’d be able to get.</p>
+<p>
+We have a proficient team of developers, which can handle mobile application development programs which we have specially designed according to our global client needs. Windows mobile application development requires great experience about Microsoft technologies and professional technical expertise in mobile programming languages and frameworks to provide quality services.</p>
+
+                                <h3>By using the Windows Mobile platform, we build innovative mobile phone applications. The platform offers features such as :</h3>
+
+
+                                 <ul class="ttm-list ttm-list-style-icon">
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Seamless data connectivity</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Enhanced security</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Rich API support such as Blue tooth.</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Pocket Outlook Object Model (POOM)</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Programming models (native code, managed code, mobile web development)</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Multithreading.</span></li>
+                                                </ul>
+                              
+                               <h3>We are having following application type of experience:-</h3>
+
+
+                                 <ul class="ttm-list ttm-list-style-icon">
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Retail Chain management system offering sync with desktop app</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Expense management applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Network management applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Mobile social networking</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Internet applications & GPS and navigation apps</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Multimedia & Utilities Application development.</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Multimedia application streaming on Windows Mobile</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Communication &amp; System apps</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Location-based PPC System</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Unified messaging system</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Content delivery applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Wireless Communications STACK</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Endorsement via messaging</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Application Launcher development</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Data Back up applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">VOIP solutions</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Spying applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Time and Expense Applications</span></li>
+                                                    <li><i class="fa fa-check-circle ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Internet and internet access</span></li>
+                                                   
+                                                </ul>
+                                <!-- acadion -->
+                               
+                            </div>
+                        </div>
+                        <!-- ttm-service-single-content-are end -->
+                    </div>
+                    <div class="col-lg-3 widget-area">
+                        <aside class="widget widget-nav-menu">
+                            <ul class="widget-menu">
+                                    <li><a href="#">IPhone/IPad App Development</a></li>
+                                    <li><a href="#">Android App Development</a></li>
+                                    <li><a href="#">Blackberry App Development</a></li>
+                                    <li class="active"><a href="#">Windows Mobile App Development</a></li>
+                                    <li><a href="#">Symbian App Development</a></li>
+                                    <li><a href="#">Cross Platform App Developmentls</a></li>
+                            </ul>
+                        </aside>
+                       
+                        <aside class="widget widget-download">
+                            <h3 class="widget-title">Brouchers</h3>
+                            <ul class="download">
+                                <li>
+                                    <i class="fa fa-file-pdf-o"></i>
+                                    <a href="GenieSoftSystem-IPhone -Portfolio-V1.0.pdf" title="Download">Download Portfolio</a>
+                                </li>
+                               
+                                <li>
+                                    <i class="fa fa-files-o"></i>
+                                    <a href="#" title="Download">View Portfolio</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="widget widget_media_image">
+                            <div class="banner-img-box ttm-textcolor-white text-left">
+                                <div class="featured-content featured-content-banner">
+                                    <i class="flaticon flaticon-call"></i>
+                                    <div class="featured-title ttm-box-title">
+                                        <h5>How Can We Help?</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>If you need any help, please<br> feel free to contact us.</p>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>+91 - 8080 184 153</li>
+                                        <li><i class="fa fa-envelope-o"></i><a href="mailto:sales@geniesoftsystem.com">sales@geniesoftsystem.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div><!-- row end -->
+            </div>
+        </div>
+            <!-- process-section end -->
+
+        </div><!--site-main end-->
+
+        <!--footer start-->
+        <footer class="footer widget-footer clearfix">
+          
+            <div class="second-footer ttm-textcolor-white bg-img2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget widget_text  clearfix">
+                                
+                               
+                                <h3 class="widget-title">About Our Company</h3>
+                                <div class="textwidget widget-text">
+                                   Genie Softsystem is proud to be led by extremely focused and dedicated professionals, who are known for their entrepreneurial skills, experience, and expertise in a wide spectrum of industries Through our solution partnerships and strategic alliances we continue to expand our horizons in the global market. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                               <h3 class="widget-title">Mobile Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="iphone-ipad-app-development.html">I Phone / IPAD App Development</a></li>
+                                                    <li><a href="android-application-development.html">Android Application Development</a></li>
+                                                    <li><a href="blackberry-app-development.html">Blackberry App Development</a></li>
+                                                    <li><a href="windows-mobile-app-development.html">Windows Mobile App Development</a></li>
+                                                    <li><a href="symbian-application-development.html">SYMBIAN APPLICATION DEVELOPMENT</a></li>
+                                                    <li><a href="cross-platform-app-development.html">Cross Platform App Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Web Development</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="social-networking.html">Social Networking</a></li>
+                                                    <li><a href="web-2-0-development.html">Web2.0 Development</a></li>
+                                                    <li><a href="ecommerce-application.html">Ecommerce Application</a></li>
+                                                    <li><a href="online-cms-content-mgmt-system-2.html">Online CMS</a></li>
+                                                    <li><a href="elearning-applications.html">E learning Applications</a></li>
+                                                    <li><a href="seosem.html">Search Online CMS  (Content MGMT System)</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                           <div class="widget link-widget clearfix">
+                                 <h3 class="widget-title">Our Products</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="http://smartappsindia.com/index.php/dashboard/our_products">Our Products</a></li>
+                                    <li><a href="http://geniemobileapps.com/">Our Mobile Developement</a></li>
+                                  
+                                </ul><br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text ttm-bgcolor-darkgrey ttm-textcolor-white">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-6">
+                            <div class="">
+                                <span>Copyright © 2022&nbsp;Genie Soft System <a href="# target="_blank">#</a></span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+        <!-- Javascript -->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.js"></script>    
+        <script src="js/jquery-waypoints.js"></script>    
+        <script src="js/jquery-validate.js"></script> 
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/numinate.min6959.js?ver=4.9.3"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Javascript end-->
+
+</body>
+
+<!-- Mirrored from themetechmount.com/html/altech/aboutus-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jan 2022 11:06:32 GMT -->
+</html>

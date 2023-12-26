@@ -1,0 +1,5 @@
+app/Config/Database.php
+.env
+writable/
+public/uploads/
+
